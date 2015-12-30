@@ -1,3 +1,8 @@
-zaremba
-=======
-http://cxf.apache.org/docs/maven-cxf-codegen-plugin-wsdl-to-java.html
+### First java project:
+
+** Requirements:**
+```
+    - Java 8
+    - Maven
+    - Spring
+```
