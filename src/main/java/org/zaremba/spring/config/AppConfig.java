@@ -1,4 +1,4 @@
-package org.zaremba.spring;
+package org.zaremba.spring.config;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,6 +1,7 @@
 package org.zaremba.spring;
 
 import org.springframework.boot.SpringApplication;
+import org.zaremba.spring.config.AppConfig;
 
 /**
  * @author Gorkhover D.
