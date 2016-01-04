@@ -9,6 +9,7 @@ import org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServle
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,11 +21,12 @@ import java.util.concurrent.TimeUnit;
 @EnableAutoConfiguration(exclude = {
         FreeMarkerAutoConfiguration.class
 })
+@EnableWebMvc
 @ComponentScan("org.zaremba.spring")
 public class AppConfig {
 
-    private int ioThreads = Runtime.getRuntime().availableProcessors();
-    private int workerThreads = 2 * Runtime.getRuntime().availableProcessors();
+    private final int ioThreads = Runtime.getRuntime().availableProcessors();
+    private final int workerThreads = 2 * Runtime.getRuntime().availableProcessors();
 
     @Bean
     public EmbeddedServletContainerFactory servletContainer() {
