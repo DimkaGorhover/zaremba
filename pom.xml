@@ -6,7 +6,7 @@
 
     <groupId>zaremba</groupId>
     <artifactId>zaremba</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -36,7 +36,31 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <!--<dependency>
+            <groupId>kr.pe.kwonnam.freemarker</groupId>
+            <artifactId>freemarker-template-inheritance</artifactId>
+            <version>0.4.RELEASE</version>
+        </dependency>-->
 
+
+
+
+        <!-- TEST -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.10</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- WSDL -->
         <dependency>
@@ -58,6 +82,7 @@
     </dependencies>
 
     <build>
+        <finalName>app</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

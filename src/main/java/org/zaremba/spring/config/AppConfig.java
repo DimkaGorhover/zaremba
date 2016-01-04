@@ -2,6 +2,7 @@ package org.zaremba.spring.config;
 
 import io.undertow.Undertow;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
 import org.springframework.boot.context.embedded.undertow.UndertowBuilderCustomizer;
 import org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainerFactory;
@@ -16,7 +17,9 @@ import java.util.concurrent.TimeUnit;
  * @since 2015-12-30
  */
 @Configuration
-@EnableAutoConfiguration
+@EnableAutoConfiguration(exclude = {
+        //FreeMarkerAutoConfiguration.class
+})
 @ComponentScan("org.zaremba.spring")
 public class AppConfig {
 
