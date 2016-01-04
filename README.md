@@ -1,8 +1,11 @@
 ### First java project:
 
-** Requirements:**
-```
-    - Java 8
-    - Maven
-    - Spring
+**Requirements:**
+
+```yml
+Java 8
+Maven
+Spring:
+    Spring Context
+    Spring Boot Web
 ```
