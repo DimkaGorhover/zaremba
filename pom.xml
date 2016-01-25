@@ -36,6 +36,13 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
 
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+        </dependency>
+        
+        <!-- freemarker -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
@@ -45,9 +52,6 @@
             <artifactId>freemarker-template-inheritance</artifactId>
             <version>0.4.RELEASE</version>
         </dependency>
-
-
-
 
         <!-- TEST -->
         <dependency>
