@@ -1,9 +1,5 @@
-<HTML>
-<head>
-    <title>${title}</title>
-</head>
-<body>
-
-<h1>BODY</h1>
-</body>
-</HTML>
+<@layout.extends name="base.ftl">
+    <@layout.put block="content" type="replace">
+    <h1>index.ftl</h1>
+    </@layout.put>
+</@layout.extends>

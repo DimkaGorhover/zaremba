@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 @EnableAutoConfiguration(exclude = {
-        //FreeMarkerAutoConfiguration.class
+        FreeMarkerAutoConfiguration.class
 })
 @ComponentScan("org.zaremba.spring")
 public class AppConfig {

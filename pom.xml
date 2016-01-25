@@ -40,11 +40,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>kr.pe.kwonnam.freemarker</groupId>
             <artifactId>freemarker-template-inheritance</artifactId>
             <version>0.4.RELEASE</version>
-        </dependency>-->
+        </dependency>
 
 
 
