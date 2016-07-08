@@ -1,6 +1,7 @@
 package org.zaremba.spring.entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -10,6 +11,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "users")
+@XmlRootElement(name = "user")
 public class User implements Serializable, Cloneable {
 
     @Id
