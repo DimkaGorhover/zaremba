@@ -23,7 +23,7 @@ import java.util.Map;
 @Configuration
 public class FreemarkerConfig {
 
-    public Map<String, TemplateModel> freemarkerLayoutDirectives() {
+    private Map<String, TemplateModel> freemarkerLayoutDirectives() {
         Map<String, TemplateModel> freemarkerLayoutDirectives = new HashMap<>();
         freemarkerLayoutDirectives.put("extends", new ExtendsDirective());
         freemarkerLayoutDirectives.put("block", new BlockDirective());
