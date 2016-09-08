@@ -1,0 +1,14 @@
+spring:
+  redis:
+    host: localhost
+    database: 0
+    port: 5379
+  datasource:
+    url: jdbc:h2:mem:db1
+    username: sa
+    password:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update

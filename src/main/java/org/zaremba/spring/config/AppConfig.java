@@ -2,6 +2,7 @@ package org.zaremba.spring.config;
 
 import io.undertow.Undertow;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
 import org.springframework.boot.context.embedded.undertow.UndertowBuilderCustomizer;
@@ -19,7 +20,8 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 @EnableAutoConfiguration(exclude = {
-        FreeMarkerAutoConfiguration.class
+        FreeMarkerAutoConfiguration.class,
+        RedisAutoConfiguration.class
 })
 @EnableWebMvc
 @ComponentScan("org.zaremba.spring")
